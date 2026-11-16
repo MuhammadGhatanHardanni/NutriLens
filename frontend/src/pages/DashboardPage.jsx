@@ -136,7 +136,7 @@ export default function DashboardPage() {
     return (
       <div className="flex flex-col justify-center items-center min-h-[400px] space-y-3">
         <div className="animate-spin rounded-full h-10 w-10 border-4 border-[#028543] border-t-transparent"></div>
-        <p className="text-xs font-semibold text-gray-500">Memuat Buku Harian FatSecret...</p>
+        <p className="text-xs font-semibold text-gray-500">Memuat buku harian makanan...</p>
       </div>
     );
   }

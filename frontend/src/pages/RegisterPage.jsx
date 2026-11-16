@@ -40,7 +40,7 @@ export default function RegisterPage() {
         <div className="inline-flex p-3 bg-emerald-50 text-emerald-700 rounded-2xl mb-3">
           <Salad size={36} />
         </div>
-        <h1 className="text-2xl font-black text-gray-900 tracking-tight">Buat Akun NutriSnap</h1>
+        <h1 className="text-2xl font-black text-gray-900 tracking-tight">Buat Akun NutriLens</h1>
         <p className="text-gray-500 text-xs mt-1">Daftar sekarang untuk mulai memantau buku harian gizi</p>
       </div>
 

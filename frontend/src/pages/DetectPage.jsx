@@ -184,7 +184,7 @@ export default function DetectPage() {
       {/* ─── Breadcrumb FatSecret Style ─── */}
       <div className="flex items-center gap-1.5 text-xs text-gray-500">
         <Link to="/" className="text-[#028543] hover:underline">
-          NutriSnap
+          NutriLens
         </Link>
         <ChevronRight size={13} className="text-gray-400" />
         <Link to="/dashboard" className="text-[#028543] hover:underline">
@@ -207,7 +207,7 @@ export default function DetectPage() {
           </div>
           <p className="text-xs text-gray-500 mt-1">
             Ambil atau unggah foto hidangan Anda. AI akan mengidentifikasi jenis makanan dan
-            menampilkan rincian Informasi Nilai Gizi standar FatSecret Indonesia.
+            menampilkan perkiraan kalori dan rincian kandungan gizi makanan Anda.
           </p>
         </div>
 

@@ -79,7 +79,7 @@ export default function HistoryPage() {
       {/* ─── Breadcrumb ─── */}
       <div className="flex items-center gap-1.5 text-xs text-gray-500">
         <Link to="/" className="text-[#028543] hover:underline">
-          NutriSnap
+          NutriLens
         </Link>
         <ChevronRight size={13} className="text-gray-400" />
         <Link to="/dashboard" className="text-[#028543] hover:underline">
@@ -97,7 +97,7 @@ export default function HistoryPage() {
             <span>Riwayat & Arsip Makanan</span>
           </h1>
           <p className="text-xs text-gray-500 mt-0.5">
-            Daftar seluruh masakan yang pernah Anda deteksi melalui foto di NutriSnap.
+            Daftar makanan yang pernah Anda analisis dan simpan ke riwayat NutriLens.
           </p>
         </div>
 

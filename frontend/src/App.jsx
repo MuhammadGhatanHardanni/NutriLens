@@ -10,15 +10,16 @@ import DashboardPage from './pages/DashboardPage.jsx';
 import HistoryPage from './pages/HistoryPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
+import './App.css';
 
 function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
         <Toaster position="top-right" />
-        <div className="min-h-screen bg-gray-50">
+        <div className="app-shell">
           <Navbar />
-          <main className="container mx-auto px-4 py-8 max-w-6xl">
+          <main className="app-main">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/detect" element={<DetectPage />} />
