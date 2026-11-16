@@ -1,0 +1,38 @@
+{
+  "name": "nutrisnap-backend",
+  "version": "1.0.0",
+  "description": "Backend API for NutriSnap - Food Detection & Nutrition System",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "keywords": [
+    "food-detection",
+    "nutrition",
+    "api",
+    "express"
+  ],
+  "author": "Team NutriSnap",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "@prisma/client": "^7.10.1",
+    "axios": "^1.21.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "form-data": "^4.0.6",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

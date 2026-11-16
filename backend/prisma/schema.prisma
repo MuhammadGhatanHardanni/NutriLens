@@ -1,0 +1,47 @@
+// Prisma Database Schema - NutriSnap
+// Menggunakan SQLite agar langsung jalan tanpa perlu install server database terpisah
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// ─── User Model ────────────────────────────────────────
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relasi
+  histories FoodHistory[]
+
+  @@map("users")
+}
+
+// ─── Food History Model ────────────────────────────────
+model FoodHistory {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  foodName    String
+  imageUrl    String?
+  calories    Float    @default(0)
+  protein     Float    @default(0)
+  fat         Float    @default(0)
+  carbs       Float    @default(0)
+  fiber       Float    @default(0)
+  servingSize String   @default("1 porsi")
+  detectedAt  DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  // Relasi
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("food_histories")
+}
